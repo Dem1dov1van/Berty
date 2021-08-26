@@ -1,6 +1,6 @@
 window.onload = function(){
     let toggleButton = document.querySelector('.header__toggle-button')
-    toggleButton.addEventListener('click touchstart', toggleAside)
+    toggleButton.addEventListener('click', toggleAside)
     let aside = document.querySelector('.sidebar')
     let close = document.querySelector('.sidebar__close-btn')
     close.addEventListener('click  ', toggleAside)
