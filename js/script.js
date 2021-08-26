@@ -21,7 +21,7 @@ window.onload = function(){
     });
 
 
-    $('[data-open-faq').on('click  ', function() {
+    $('[data-open-faq').on('click', function() {
         const activeCls = 'is-active'
         $('[data-open-faq]').removeClass(activeCls)
         this.classList.add(activeCls)
