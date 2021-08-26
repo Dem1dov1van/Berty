@@ -34,7 +34,7 @@ window.onload = function(){
         $('.show-content__payment-list li').removeClass('active');
         this.classList.add('active')
     })
-
+// history info
     // $('.history-item').on('click', function() {
     //     this.classList.toggle('open').next().slideToggle(300)
     // })

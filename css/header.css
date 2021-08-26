@@ -43,7 +43,7 @@
   padding: 20px 60px 20px 28px;
 }
 
-.group-hot-btn__mail img{
+.group-hot-btn__mail svg{
   margin-right: 10px;
 }
 
@@ -67,6 +67,14 @@
 
 .nav-list__item:not(:last-child){
   margin-right: 25px;
+}
+
+.nav-list__item svg{
+  fill: #D2D2D2;
+}
+
+.nav-list__item:hover svg{
+  fill: #6b6b6b;
 }
 
 .group-hot-btn__mail {

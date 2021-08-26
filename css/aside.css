@@ -20,18 +20,11 @@
 }
 
 
-.navigation__item a:hover{
+.navigation__item:hover a{
   color: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(18 18 18 / 20%) 100%);
 }
 
-
-.nav-list__item:hover svg path,
-.navigation__item:hover svg path{
-  fill: rgb(107, 107, 107) ;
-} 
-
-.navigation__item.active svg path{
+.navigation__item.active svg{
   fill: var(--main-color);
 }
 
@@ -54,11 +47,22 @@
 
 .navigation__item svg{
   margin-right: 15px;
+  fill: #D2D2D2
+}
+.navigation__item:hover svg{
+  margin-right: 15px;
+  fill: #6b6b6b
 }
 
 .navigation__item a:focus{
   color: var(--main-color);
 }
+
+.navigation__item a:focus svg{
+  fill: var(--main-color);
+}
+
+
 .sidebar__download-link{
   display: flex;
   background: #FFFFFF;
