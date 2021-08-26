@@ -1,9 +1,10 @@
 window.onload = function(){
     let toggleButton = document.querySelector('.header__toggle-button')
-    toggleButton.addEventListener('click touch', toggleAside)
+    toggleButton.addEventListener('click', toggleAside)
+    toggleButton.addEventListener('touchend', toggleAside)
     let aside = document.querySelector('.sidebar')
     let close = document.querySelector('.sidebar__close-btn')
-    close.addEventListener('click touch', toggleAside)
+    close.addEventListener('click  ', toggleAside)
     let main = document.querySelector('.main')
     function toggleAside(){
         aside.classList.toggle('unvisible')
@@ -11,7 +12,7 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    $('[data-open-block').on('click touch', function() {
+    $('[data-open-block').on('click', function() {
         const activeCls = 'is-active';
         $('[data-open-block]').removeClass(activeCls);
         this.classList.add(activeCls)
@@ -21,7 +22,7 @@ window.onload = function(){
     });
 
 
-    $('[data-open-faq').on('click touch', function() {
+    $('[data-open-faq').on('click  ', function() {
         const activeCls = 'is-active'
         $('[data-open-faq]').removeClass(activeCls)
         this.classList.add(activeCls)
@@ -30,7 +31,7 @@ window.onload = function(){
     });
 
 
-    $('.show-content__payment-list li').on('click touch', function() {
+    $('.show-content__payment-list li').on('click  ', function() {
         $('.show-content__payment-list li').removeClass('active');
         this.classList.add('active')
     })
@@ -199,7 +200,7 @@ window.onload = function(){
       if ( dropdowns ) {
           dropdownBody.style.maxHeight = '0'
 
-          dropdownHead.addEventListener('click touch', () => {
+          dropdownHead.addEventListener('click  ', () => {
 
             console.log(dropdownBody);
               if (!isOpen) {
