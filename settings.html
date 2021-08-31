@@ -67,16 +67,16 @@
                 <div class="main__open-page open-page">
                     <div class="open-page__select-content select-content four">
                         <div class="select-content__top-buttons toggle-buttons">
-                            <a style="cursor: pointer;" onclick="showAnother(event)" data-open-block="contacts" class="toggle-buttons__item is-active">
+                            <a style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active">
                                 <p style="pointer-events: none;">Контакты</p> 
                             </a>
-                            <a style="cursor: pointer;" onclick="showAnother(event)" data-open-block="verif" class="toggle-buttons__item">
+                            <a style="cursor: pointer;" data-open-block="verif" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Верификация</p>
                             </a>
-                            <a style="cursor: pointer;" onclick="showAnother(event)"  data-open-block="save" class="toggle-buttons__item">
+                            <a style="cursor: pointer;" data-open-block="save" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Безопасность</p>
                             </a>
-                            <a style="cursor: pointer;" onclick="showAnother(event)" data-open-block="password" class="toggle-buttons__item">
+                            <a style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Смена пароля</p>
                             </a>
                         </div>
@@ -419,16 +419,4 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-        let btns = document.querySelectorAll('[data-open-block')
-        console.log(btns);
-        let showAnother = (e) => {
-            console.log(e.target);
-            for(let i=0; i < btns.length; i++){
-                btns[i].classList.remove('is-active')
-            }
-            e.target.classList.add('is-active')
-        }
-    const activeCls = 'is-active';
-    </script>
 </body>
