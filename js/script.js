@@ -18,6 +18,14 @@ window.onload = function(){
         $('[data-content]').removeClass(activeCls);
       $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
     });
+    
+    $('[data-open-block').on('touchstart', function() {
+        const activeCls = 'is-active';
+        $('[data-open-block]').removeClass(activeCls);
+        this.classList.add(activeCls)
+        $('[data-content]').removeClass(activeCls);
+      $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
+    });
 
     // let btns = document.querySelectorAll('[data-open-block')
     // // console.log(btns);
