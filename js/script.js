@@ -11,15 +11,29 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    $('[data-open-block').on('click', function() {
-        const activeCls = 'is-active';
-        $('[data-open-block]').removeClass(activeCls);
-        this.classList.add(activeCls)
-        $('[data-content]').removeClass(activeCls);
-      $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
-      
-    });
+    // $('[data-open-block').on('click', function() {
+    //     const activeCls = 'is-active';
+    //     $('[data-open-block]').removeClass(activeCls);
+    //     this.classList.add(activeCls)
+    //     $('[data-content]').removeClass(activeCls);
+    //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
+    // });
 
+    let btns = document.querySelectorAll('[data-open-block')
+    console.log(btns);
+    let showAnother = (e) => {
+        console.log(e.target);
+        for(let i=0; i < btns.length; i++){
+            btns[i].classList.remove('is-active')
+        }
+        e.target.classList.add('is-active')
+    }
+    const activeCls = 'is-active';
+    for(let i=0; i < btns.length; i++){
+        btns[i].addEventListener('click', showAnother)
+    }
+    btns.addEventListener('click', showAnother)
+    
 
     $('[data-open-faq').on('click', function() {
         const activeCls = 'is-active'
