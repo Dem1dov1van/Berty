@@ -16,6 +16,11 @@ ul {
 a {
   text-decoration: none;
 }
+button {
+  outline: none;
+  border: none;
+  background-color: none;
+}
 
 /* //dragAndDrop */
 .show-content__download-zone {
@@ -432,6 +437,7 @@ a {
 .toggle-buttons__item {
   padding: 22px 57px;
   color: rgba(77, 77, 77, 0.32);
+  background-color: #f7f7f7;
   border-radius: 10px;
   position: relative;
   cursor: pointer;

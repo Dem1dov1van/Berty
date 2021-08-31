@@ -30,7 +30,7 @@ window.onload = function(){
     });
 
 
-    $('.show-content__payment-list li').on('click  ', function() {
+    $('.show-content__payment-list li').on('click touch', function() {
         $('.show-content__payment-list li').removeClass('active');
         this.classList.add('active')
     })
