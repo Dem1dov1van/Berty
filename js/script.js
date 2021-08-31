@@ -11,7 +11,7 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    $('[data-open-block').on('click', function() {
+    $('[data-open-block').on('touchstart click', function() {
         const activeCls = 'is-active';
         $('[data-open-block]').removeClass(activeCls);
         this.classList.add(activeCls)
@@ -27,19 +27,20 @@ window.onload = function(){
     //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
     // });
 
-    let btns = document.querySelectorAll('[data-open-block')
-    // console.log(btns);
-    let showAnother = (e) => {
-        // console.log(e.target);
-        for(let i=0; i < btns.length; i++){
-            btns[i].classList.remove('is-active')
-        }
-        e.target.classList.add('is-active')
-    }
-    const activeCls = 'is-active';
-    for(let i=0; i < btns.length; i++){
-        btns[i].addEventListener('touchstart', showAnother)
-    }
+    // let btns = document.querySelectorAll('[data-open-block')
+    // // console.log(btns);
+    // let showAnother = (e) => {
+    //     // console.log(e.target);
+    //     for(let i=0; i < btns.length; i++){
+    //         btns[i].classList.remove('is-active')
+    //     }
+    //     e.target.classList.add('is-active')
+    //     console.log(e.target);
+    // }
+    // const activeCls = 'is-active';
+    // for(let i=0; i < btns.length; i++){
+    //     btns[i].addEventListener('touchstart',showAnother)
+    // }
     // btns.addEventListener('click', showAnother)
     // for(let i=0; i < btns.length; i++){
     //     btns[i].addEventListener('touchstart', showAnother)
@@ -48,7 +49,7 @@ window.onload = function(){
     
     
 
-    $('[data-open-faq').on('click', function() {
+    $('[data-open-faq').on('touchstart click', function() {
         const activeCls = 'is-active'
         $('[data-open-faq]').removeClass(activeCls)
         this.classList.add(activeCls)
@@ -57,7 +58,7 @@ window.onload = function(){
     });
 
 
-    $('.show-content__payment-list li').on('click touch', function() {
+    $('.show-content__payment-list li').on('touchstart click', function() {
         $('.show-content__payment-list li').removeClass('active');
         this.classList.add('active')
     })
@@ -225,9 +226,7 @@ window.onload = function(){
 
       if ( dropdowns ) {
           dropdownBody.style.maxHeight = '0'
-
           dropdownHead.addEventListener('click  ', () => {
-
             console.log(dropdownBody);
               if (!isOpen) {
                   console.log('heightBody', heightBody);
