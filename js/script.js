@@ -20,19 +20,19 @@ window.onload = function(){
     // });
 
     let btns = document.querySelectorAll('[data-open-block')
-    console.log(btns);
+    // console.log(btns);
     let showAnother = (e) => {
-        console.log(e.target);
+        // console.log(e.target);
         for(let i=0; i < btns.length; i++){
             btns[i].classList.remove('is-active')
         }
         e.target.classList.add('is-active')
     }
     const activeCls = 'is-active';
-    for(let i=0; i < btns.length; i++){
-        btns[i].addEventListener('click', showAnother)
-    }
-    btns.addEventListener('click', showAnother)
+    // for(let i=0; i < btns.length; i++){
+    //     btns[i].addEventListener('click', showAnother)
+    // }
+    // btns.addEventListener('click', showAnother)
     
 
     $('[data-open-faq').on('click', function() {
