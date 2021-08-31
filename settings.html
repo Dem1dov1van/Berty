@@ -67,16 +67,16 @@
                 <div class="main__open-page open-page">
                     <div class="open-page__select-content select-content four">
                         <div class="select-content__top-buttons toggle-buttons">
-                            <a style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active">
+                            <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active">
                                 <p style="pointer-events: none;">Контакты</p> 
                             </a>
-                            <a style="cursor: pointer;" data-open-block="verif" class="toggle-buttons__item">
+                            <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="verif" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Верификация</p>
                             </a>
-                            <a style="cursor: pointer;" data-open-block="save" class="toggle-buttons__item">
+                            <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="save" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Безопасность</p>
                             </a>
-                            <a style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item">
+                            <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Смена пароля</p>
                             </a>
                         </div>
@@ -419,4 +419,22 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        let btns = document.querySelectorAll('[data-open-block')
+        let cntents = document.querySelectorAll('[data-content')
+        function changeLink(e){
+            let elem = e.target
+            let attri = elem.getAttribute('data-open-block')
+
+            for(let i=0; i < btns.length; i++){
+                btns[i].classList.remove('is-active')
+            }
+            e.target.classList.add('is-active')
+            for(let i=0; i < cntents.length; i++){
+                cntents[i].classList.remove('is-active')
+            };
+            let actLink = document.querySelector('[data-content=' + attri)
+            actLink.classList.add('is-active')
+        }
+    </script>
 </body>
