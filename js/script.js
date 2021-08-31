@@ -13,6 +13,7 @@ window.onload = function(){
 
     $('[data-open-block').on('touchstart click', function() {
         const activeCls = 'is-active';
+        alert('iphone - говно')
         $('[data-open-block]').removeClass(activeCls);
         this.classList.add(activeCls)
         $('[data-content]').removeClass(activeCls);
