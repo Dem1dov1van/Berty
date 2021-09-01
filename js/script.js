@@ -15,6 +15,7 @@ window.onload = function(){
     console.log(btns);
     for(let i=0; i < btns.length; i++){
         btns[i].addEventListener('click', function(e){
+            document.querySelector('.toggle-buttons__item.is-active').classList.remove('is-active')
             console.log(e.target);
             e.target.classList.add('is-active')
         })
@@ -29,7 +30,6 @@ window.onload = function(){
     //   $(`[data-content="${$(this).data('open-block')}"`).addClass('is-active');
     // });
 
-    alert('подгрузился js')
 
     // $('[data-open-block').on('touchstart', function() {
     //     const activeCls = 'is-active';
