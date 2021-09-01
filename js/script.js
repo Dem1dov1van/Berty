@@ -11,15 +11,15 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    $('[data-open-block').on('mouseover', function() {
-        const activeCls = 'is-active';
-        alert('iphone - говно')
-        console.log('iphone - говно')
-        $('[data-open-block]').removeClass(activeCls);
-        this.classList.add(activeCls)
-        $('[data-content]').removeClass(activeCls);
-      $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
-    });
+    // $('[data-open-block').on('mouseover', function() {
+    //     const activeCls = 'is-active';
+    //     alert('iphone - говно')
+    //     console.log('iphone - говно')
+    //     $('[data-open-block]').removeClass(activeCls);
+    //     this.classList.add(activeCls)
+    //     $('[data-content]').removeClass(activeCls);
+    //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
+    // });
 
     
 
