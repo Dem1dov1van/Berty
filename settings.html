@@ -75,7 +75,7 @@
                             <a onclick="alert(228)"  style="cursor: pointer;" data-open-block="save" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Безопасность</p>
                             </a>
-                            <input style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item" value="Смена пароля" type="button">
+                            <input onclick="changeLink(event)" style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item" value="Смена пароля" type="button">
                             </input>
                         </div>
                         <div class="select-content__show-content show-content is-active" data-content="contacts">
@@ -421,18 +421,19 @@
         let btns = document.querySelectorAll('[data-open-block')
         let cntents = document.querySelectorAll('[data-content')
         function changeLink(e){
-            let elem = e.target
-            let attri = elem.getAttribute('data-open-block')
+            alert(e.type)
+            // let elem = e.target
+            // let attri = elem.getAttribute('data-open-block')
 
-            for(let i=0; i < btns.length; i++){
-                btns[i].classList.remove('is-active')
-            }
-            e.target.classList.add('is-active')
-            for(let i=0; i < cntents.length; i++){
-                cntents[i].classList.remove('is-active')
-            };
-            let actLink = document.querySelector('[data-content=' + attri)
-            actLink.classList.add('is-active')
+            // for(let i=0; i < btns.length; i++){
+            //     btns[i].classList.remove('is-active')
+            // }
+            // e.target.classList.add('is-active')
+            // for(let i=0; i < cntents.length; i++){
+            //     cntents[i].classList.remove('is-active')
+            // };
+            // let actLink = document.querySelector('[data-content=' + attri)
+            // actLink.classList.add('is-active')
         }
     </script>
 </body>

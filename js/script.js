@@ -11,17 +11,17 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    $('[data-open-block').on('click', function() {
-        const activeCls = 'is-active';
-        alert('iphone - говно')
-        console.log('iphone - говно')
-        $('[data-open-block]').removeClass(activeCls);
-        this.classList.add(activeCls)
-        $('[data-content]').removeClass(activeCls);
-      $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
-    });
+    // $('[data-open-block').on('click', function() {
+    //     const activeCls = 'is-active';
+    //     alert('iphone - говно')
+    //     console.log('iphone - говно')
+    //     $('[data-open-block]').removeClass(activeCls);
+    //     this.classList.add(activeCls)
+    //     $('[data-content]').removeClass(activeCls);
+    //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
+    // });
 
-    
+    alert('подгрузился js')
 
     // $('[data-open-block').on('touchstart', function() {
     //     const activeCls = 'is-active';
@@ -31,10 +31,10 @@ window.onload = function(){
     //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
     // });
 
-    let btns = document.querySelectorAll('[data-open-block')
-    for(let i=0; i < btns.length; i++){
-        btns[i].addEventListener('click',() => alert(21))
-        }
+    // let btns = document.querySelectorAll('[data-open-block')
+    // for(let i=0; i < btns.length; i++){
+    //     btns[i].addEventListener('click',() => alert(21))
+    //     }
     // // console.log(btns);
     // let showAnother = (e) => {
     //     // console.log(e.target);
