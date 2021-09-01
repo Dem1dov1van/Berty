@@ -16,6 +16,7 @@ ul {
 a {
   text-decoration: none;
 }
+.toggle-buttons__item,
 button {
   outline: none;
   border: none;

@@ -67,18 +67,16 @@
                 <div class="main__open-page open-page">
                     <div class="open-page__select-content select-content four">
                         <div class="select-content__top-buttons toggle-buttons">
-                            <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active">
-                                <p style="pointer-events: none;">Контакты</p> 
-                            </a>
+                            <input onclick="changeLink(event)" style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active" type="button" value="Контакты"> 
+                            </input>
                             <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="verif" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Верификация</p>
                             </a>
                             <a onclick="changeLink(event)" onmousedown="changeLink(event)" style="cursor: pointer;" data-open-block="save" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Безопасность</p>
                             </a>
-                            <a onmousedown="changeLink(event)" onmouseover="changeLink(event)" onclick="alert(21)" style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item">
-                                <p style="pointer-events: none;">Смена пароля</p>
-                            </a>
+                            <input onmousedown="changeLink(event)" onclick="changeLink(event)" style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item" value="Смена пароля">
+                            </input>
                         </div>
                         <div class="select-content__show-content show-content is-active" data-content="contacts">
                             <div class="show-content__wrapper">
