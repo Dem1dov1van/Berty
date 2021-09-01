@@ -79,8 +79,8 @@ button {
   background-color: #f7f7f7;
   width: 100vw;
   height: 100vh;
-  /* overflow-y: auto; */
-  /* -webkit-overflow-scrolling: touch; */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .container {
