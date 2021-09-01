@@ -11,17 +11,17 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    // $('[data-open-block').on('click', function() {
-    //     const activeCls = 'is-active';
-    //     alert('iphone - говно')
-    //     console.log('iphone - говно')
-    //     $('[data-open-block]').removeClass(activeCls);
-    //     this.classList.add(activeCls)
-    //     $('[data-content]').removeClass(activeCls);
-    //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
-    // });
+    $('[data-open-block').on('click', function() {
+        const activeCls = 'is-active';
+        alert('iphone - говно')
+        console.log('iphone - говно')
+        $('[data-open-block]').removeClass(activeCls);
+        this.classList.add(activeCls)
+        $('[data-content]').removeClass(activeCls);
+      $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
+    });
 
-    // alert('подгрузился js')
+    alert('подгрузился js')
 
     // $('[data-open-block').on('touchstart', function() {
     //     const activeCls = 'is-active';
