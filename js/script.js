@@ -16,8 +16,18 @@ window.onload = function(){
     for(let i=0; i < btns.length; i++){
         btns[i].addEventListener('click', function(e){
             document.querySelector('.toggle-buttons__item.is-active').classList.remove('is-active')
-            console.log(e.target);
+            let attri = e.target.getAttribute('data-open-block')
+            console.log(attri);
             e.target.classList.add('is-active')
+            let cntns = document.querySelectorAll('.select-content__show-content')
+            
+            for(let i=0; i < cntns.length; i++){
+                cntns[i].classList.remove('is-active')
+                let cntnAttr = cntns[i].getAttribute('data-content')
+                if(cntnAttr == attri){
+                    cntns[i].classList.add('is-active')
+                }
+            }
         })
     }
 
