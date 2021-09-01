@@ -11,15 +11,23 @@ window.onload = function(){
         main.classList.toggle('noscroll')
     };
 
-    $('[data-open-block').on('click', function() {
-        const activeCls = 'is-active';
-        alert('iphone - говно')
-        console.log('iphone - говно')
-        $('[data-open-block]').removeClass(activeCls);
-        this.classList.add(activeCls)
-        $('[data-content]').removeClass(activeCls);
-      $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
-    });
+    let btns = document.querySelectorAll('.toggle-buttons__item')
+    console.log(btns);
+    for(let i=0; i < btns.length; i++){
+        btns[i].addEventListener('click', function(e){
+            console.log(e.target);
+            e.target.classList.add('is-active')
+        })
+    }
+
+    // $('[data-open-block').on('click', function() {
+    //     alert('iphone - говно')
+    //     console.log('iphone - говно')
+    //     $('[data-open-block]').removeClass('is-active');
+    //     this.classList.add('is-active')
+    //     $('[data-content]').removeClass('is-active');
+    //   $(`[data-content="${$(this).data('open-block')}"`).addClass('is-active');
+    // });
 
     alert('подгрузился js')
 
