@@ -21,7 +21,7 @@ window.onload = function(){
     //   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
     // });
 
-    alert('подгрузился js')
+    // alert('подгрузился js')
 
     // $('[data-open-block').on('touchstart', function() {
     //     const activeCls = 'is-active';

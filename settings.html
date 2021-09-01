@@ -67,16 +67,18 @@
                 <div class="main__open-page open-page">
                     <div class="open-page__select-content select-content four">
                         <div class="select-content__top-buttons toggle-buttons">
-                            <input style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active" type="button" value="Контакты"> 
-                            </input>
-                            <button style="cursor: pointer;" data-open-block="verif" class="toggle-buttons__item">
+                            <a style="cursor: pointer;" data-open-block="contacts" class="toggle-buttons__item is-active"> 
+                                <p style="pointer-events: none;" onclick="changeLink(event)">Контакты</p>
+                            </a>
+                            <a style="cursor: pointer;" onclick="changeLink(event)" data-open-block="verif" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Верификация</p>
-                            </button>
+                            </a>
                             <a onclick="alert(228)"  style="cursor: pointer;" data-open-block="save" class="toggle-buttons__item">
                                 <p style="pointer-events: none;">Безопасность</p>
                             </a>
-                            <input onclick="changeLink(event)" style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item" value="Смена пароля" type="button">
-                            </input>
+                            <a onclick="changeLink(event)" style="cursor: pointer;" data-open-block="password" class="toggle-buttons__item">
+                                <p style="pointer-events: none;">Смена пароля</p>
+                            </a>
                         </div>
                         <div class="select-content__show-content show-content is-active" data-content="contacts">
                             <div class="show-content__wrapper">
@@ -421,7 +423,9 @@
         let btns = document.querySelectorAll('[data-open-block')
         let cntents = document.querySelectorAll('[data-content')
         function changeLink(e){
-            alert(e.type)
+            // alert(e.type);
+            console.log(e.target.style);
+            e.target.style.background = 'black'
             // let elem = e.target
             // let attri = elem.getAttribute('data-open-block')
 
