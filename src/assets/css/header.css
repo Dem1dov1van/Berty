@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0px 25px 0;
+}
+
+.header__balance {
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px rgba(218, 218, 218, 0.25);
+  border-radius: 10px;
+  display: flex;
+  padding: 20px 28px;
+}
+
+.header__group-hot-btn {
+  margin-left: auto;
+}
+
+.language-circle-wrap{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url(/img/russia.svg);
+}
+
+.nav-list,
+.group-hot-btn__mail,
+.group-hot-btn{
+  display: flex;
+  align-items: center;
+}
+
+.group-hot-btn__language{
+  margin-right: 20px;
+}
+
+.group-hot-btn__mail{
+  position: relative;
+  margin-left: 20px;
+  padding: 20px 60px 20px 28px;
+}
+
+.group-hot-btn__mail svg{
+  margin-right: 10px;
+}
+
+.group-hot-btn__mail::before,
+.group-hot-btn__mail::after{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 1.5px;
+  background-color: #D2D2D2;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  border-radius: 50%;
+  transform: rotate(35deg);
+}
+.group-hot-btn__mail::before{
+  transform: rotate(-35deg);
+  right: 23px;
+}
+
+.nav-list__item:not(:last-child){
+  margin-right: 25px;
+}
+
+.nav-list__item svg{
+  fill: #D2D2D2;
+}
+
+.nav-list__item:hover svg{
+  fill: #6b6b6b;
+}
+
+.group-hot-btn__mail {
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px rgba(218, 218, 218, 0.25);
+  border-radius: 10px;
+}
+
+.header__toggle-button{
+  position: absolute;
+  left: -10px;
+  width: 20px;
+  top: 20px;
+  z-index: 1;
+  cursor: pointer;
+  height: 25px;
+  background-color: #fff;
+}
+
+.noscroll .header__toggle-button{
+  left: -10px;
+  border-radius: 50%;
+  transition: .2s all ease-in-out;
+}
+.noscroll .header__toggle-button:hover{
+  left: -5px;
+}
+.header__toggle-button::after{
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 20px;
+  height: 25px;
+  left: 10px;
+  top: 0;
+  border-radius: 50%;
+}
+
+.noscroll .header__toggle-button::after {
+  background-color: black;
+  width: 8px;
+  height: 8px;
+  left: 17px;
+  top: 0;
+  border-radius: 50%;
+  z-index: -29;
+}
+.noscroll .header__toggle-button::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: black;
+  width: 8px;
+  height: 8px;
+  left: 17px;
+  top: 15px;
+  border-radius: 50%;
+  z-index: -29;
+}
